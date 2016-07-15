@@ -1,0 +1,65 @@
+#cf {
+  position:relative;
+  height:640px;
+  width:103%;
+    margin-left: -6px;
+margin-top: -5px;
+    background: url(../img/pattern_stripe.png);
+}
+
+#cf img {
+  position:absolute;
+  left:-2;
+    top: -2px;
+    overflow-x: none;
+    overflow-y: none;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+ @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+.top {
+    max-height: 670px;
+    overflow: none;
+    min-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    filter: brightness(50%);
+    background: url(../img/pattern_stripe.png);
+    z-index: -100;
+
+}
+.bottom {
+    max-height: 670px;
+    overflow: none;
+    min-width: 100%;
+    overflow: hidden;
+        overflow-y: hidden;
+    overflow-x: hidden;
+        filter: brightness(50%);
+    background: url(../img/pattern_stripe.png);
+    z-index: -100;
+}
