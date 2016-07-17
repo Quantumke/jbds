@@ -1,18 +1,22 @@
+body{
+        font-family: 'Raleway', sans-serif;
+    background: #F5F5F5;
+}
 #cf {
-  position:relative;
-  height:640px;
+  position:absolute;
+  height:670px;
   width:103%;
     margin-left: -6px;
 margin-top: -5px;
     background: url(../img/pattern_stripe.png);
 }
 
-#cf img {
+#cf #pic {
   position:absolute;
   left:-2;
     top: -2px;
     overflow-x: none;
-    overflow-y: none;
+/*    overflow-y: none;*/
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -34,7 +38,7 @@ opacity:0;
 }
 }
 
-#cf img.top {
+#cf #pic.top {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
@@ -62,4 +66,143 @@ animation-direction: alternate;
         filter: brightness(50%);
     background: url(../img/pattern_stripe.png);
     z-index: -100;
+}
+.link-buttons-large{
+    margin-left: 75%;
+    color: white;
+}
+.link-button{
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 1px solid white;
+    font-size: 13px;
+    padding: 6px;
+    cursor: pointer;
+}
+.link-button:hover{
+    background: white;
+    color: black;
+}
+.site-name{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    color: white;
+
+}
+.logo-tags{
+    font-size: 4em;
+}
+.header-title{
+    cursor: none;
+}
+.header-title-large{
+    font-size: 2em;
+    margin-left: -150px;
+}
+.header-title-small{
+    font-size: 1.5em;
+    margin-left: -210px;
+}
+
+.header-button{
+    position: absolute;
+    left: 30px;
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    cursor: pointer;
+}
+.header-button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.jobssection{
+
+    width: 80%;
+    margin-left: 10%;
+}
+.jobslist{
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+}
+.featured-title{
+    font-size: 2.5em;
+}
+.jobs-logo{
+    float: left;
+}
+.jobs-title{
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+.job-title{
+    float: left;
+    margin-left: 30px;
+    width: 250px;
+}
+.jobs-company{
+    margin-left: 20px;
+    font-size: 0.5em;
+    color: gray;
+}
+.job-location{
+    float: left;
+     width: 100px;
+
+}
+.jobs-location{
+    font-size: 0.9em;
+
+}
+.job-stats{
+    font-size: 0.7em;
+}
+.jobs-type{
+    border: 1px solid green;
+    padding: 5px;
+    font-size: 0.6em;
+    background: green;
+    color: white;
+}
+.jobs-posted{
+    position: absolute;
+    margin-top: 9px;
+}
+.apply-button{
+     border-radius: 25px;
+    background: orange;
+    padding: 10px;
+    width: 100px;
+    height: 7px;
+    float: left;
+    margin-left: 60px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 0.5em;
+    cursor: pointer;
+}
+.apply-button:hover{
+    background: transparent;
+    border: 1px solid orange;
+    color: orange;
+}
+.left-jobs{
+    width: 80%;
+    float: left;
+
+}
+
+@media only screen and (max-width: 500px) {
+    #cf {
+
+    }
 }
