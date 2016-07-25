@@ -126,11 +126,11 @@ animation-direction: alternate;
 }
 .jobssection{
 
-    width: 80%;
+    width: 60%;
     margin-left: 10%;
 }
 .jobslist{
-    width: 80%;
+    width: 60%;
     margin-left: 10%;
     height: 100px;
 }
@@ -146,8 +146,9 @@ animation-direction: alternate;
 }
 .job-title{
     float: left;
-    margin-left: 30px;
+/*    margin-left: 30px;*/
     width: 250px;
+    text-align: center;
 }
 .jobs-company{
     margin-left: 20px;
@@ -165,6 +166,8 @@ animation-direction: alternate;
 }
 .job-stats{
     font-size: 0.7em;
+
+float: left;
 }
 .jobs-type{
     border: 1px solid green;
@@ -182,12 +185,12 @@ animation-direction: alternate;
     background: orange;
     padding: 10px;
     width: 100px;
-    height: 7px;
+    height: 14px;
     float: left;
     margin-left: 60px;
-    margin-top: -20px;
+
     text-align: center;
-    font-size: 0.5em;
+    font-size: 0.7em;
     cursor: pointer;
 }
 .apply-button:hover{
@@ -196,11 +199,154 @@ animation-direction: alternate;
     color: orange;
 }
 .left-jobs{
-    width: 80%;
-    float: left;
+background: #F5F5F5;
 
 }
+.jobsbanner{
+    height: 55px;
+}
+.right-jobs{
+    max-width: 40%;
+    margin-left: 55%;
+    margin-top: 60px;
+    background: #F5F5F5;
+}
+.right-jobs-title{
+    font-size: 2.5em;
+    margin-left: -300px;
+}
+.job-featured-item{
+    color: white;
+    font-size: 2em;
+}
+.job-featured-content{
+    color: white;
+    font-size: 0.8em;
+}
+.button-view-job{
+     border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    width: 150px;
+    height: 3px;
+    margin-top: 250px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
 
+}
+.button-view-job:hover{
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+.how-it-works-large{
+width: 100%;
+    background: white;
+}
+/* line 5, ../sass/cari.scss */
+.carousel-wrapper {
+  position: relative;
+}
+/* line 8, ../sass/cari.scss */
+.carousel-wrapper .carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+/* line 18, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: url("../img/arrow.png") 50% 50%/20px no-repeat;
+}
+/* line 27, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+  left: 0;
+}
+/* line 31, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 38, ../sass/cari.scss */
+.carousel-wrapper .carousel-item.light {
+  color: white;
+}
+/* line 41, ../sass/cari.scss */
+.carousel-wrapper .carousel-item.light .arrow {
+  background: url("../arrow.png") 50% 50%/20px no-repeat;
+}
+@media (max-width: 480px) {
+  /* line 47, ../sass/cari.scss */
+  .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+/* line 54, ../sass/cari.scss */
+.carousel-wrapper [id^="target-item"] {
+  display: none;
+}
+/* line 58, ../sass/cari.scss */
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+  background:url(../img/laptop-mobile.jpg);
+    background-size: cover;
+}
+/* line 63, ../sass/cari.scss */
+.carousel-wrapper .item-2 {
+  background:url(../img/woman-typing-writing-windows.jpg);
+    background-size: cover;
+}
+/* line 66, ../sass/cari.scss */
+.carousel-wrapper .item-3 {
+  background: url("../img/coder.jpg") no-repeat;
+  background-size: cover;
+}
+/* line 71, ../sass/cari.scss */
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0;
+}
+/* line 75, ../sass/cari.scss */
+.carousel-wrapper #target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+/* line 79, ../sass/cari.scss */
+.carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+.how-it-works-title{
+    text-align: center;
+    font-size: 3em;
+}
+.module-one {
+    text-align: center;
+
+}.module-two {
+    text-align: center;
+
+}
+.header-module{
+    font-weight: bold;
+}
+.github-button{
+    background: black;
+    color: white;
+}
 @media only screen and (max-width: 500px) {
     #cf {
 
