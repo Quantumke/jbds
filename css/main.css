@@ -406,6 +406,18 @@ width: 100%;
 .copyright-sec{
      color: white;
 }
+.links{
+    color: white;
+}
+.links-sys{
+    float: left;
+    margin-left: 10px;
+}
+.social-links{
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
 @media only screen and (max-width: 500px) {
     #cf {
 
