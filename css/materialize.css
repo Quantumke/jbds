@@ -6709,7 +6709,7 @@ nav ul a span.badge {
 .row .col {
   float: left;
   box-sizing: border-box;
-  padding: 0 0.75rem;
+/*  padding: 0 0.75rem;*/
 }
 
 .row .col[class*="push-"], .row .col[class*="pull-"] {
