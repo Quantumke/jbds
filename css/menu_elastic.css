@@ -9,9 +9,7 @@ body,
 }
 */
 
-.container {
-	background: #373a47;
-}
+
 
 .menu-wrap a {
 	color: #b8b7ad;
@@ -144,7 +142,7 @@ body,
 
 .icon-list a {
 	display: block;
-	padding: 0.8em;
+/*	padding: 0.8em;*/
 }
 
 .icon-list a i {
