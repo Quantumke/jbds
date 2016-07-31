@@ -111,3 +111,45 @@ animation-direction: alternate;
 .three-module-item{
     text-align: center;
 }
+.icon-module-title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.about-us-large{
+    width: 100%;
+    background: #EFF0F4;
+}
+.about-us-title{
+    font-size: 2em;
+}
+.button-learn{
+    border-radius: 25px;
+    height: 35px;
+    background-color: aquamarine;
+    text-align:center;
+    color: white;
+    padding-top: 5px;
+    margin-top: 30px;
+    cursor: pointer;   
+}
+.button-learn:hover{
+    border: 2px solid aquamarine;
+    background: transparent;
+    color: black;
+}
+.about-us-cover{
+    height: 450px;
+    background: url(../img/aboutus.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+      -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+
+
+}
+.about-us-right{
+    background: url(../img/pattern_stripe.png);
+     background-position: center center; 
+    height: 460px;
+    z-index: -1;
+}
