@@ -150,6 +150,61 @@ animation-direction: alternate;
 .about-us-right{
     background: url(../img/pattern_stripe.png);
      background-position: center center; 
-    height: 460px;
+    height: 450px;
     z-index: -1;
+}
+.pricing-large{
+    background: #EFF0F4;
+    width: 100%;
+}
+.price-one{
+/*    height: 200px;*/
+    background: white;
+    text-align: center;
+    border: 2px solid #EFF0F4;
+}
+.currency-ksh{
+    font-weight: bolder;
+   
+}
+.currency-amount{
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+.currency-period{
+    margin-top: 30px;
+}
+.select-plan-banner{
+    height: 10px;
+    background: #EFF0F4;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+.offer-desc{
+    text-align: left;
+}
+.offer-inactive{
+    color: darkgrey;
+    text-decoration: line-through;
+}
+.offer-desc-cross{
+    text-decoration: line-through;
+    text-align: left;
+}
+.button-get-this{
+    border-radius: 25px;
+    height: 35px;
+    background: green;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.button-get-this:hover{
+    border: 2px solid green;
+    background: transparent;
+    color: green;
 }
