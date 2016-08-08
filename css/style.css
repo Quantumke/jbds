@@ -66,10 +66,15 @@ animation-direction: alternate;
     background: url(../img/pattern_stripe.png);
     z-index: -100;
 }
+
 .header-text-large{
     font-family:  'Raleway', sans-serif;
-    margin-top: 220px;
+    margin-top: 200px;
 
+}
+.website-title{
+    color: white;
+    font-size: 3em;
 }
 .header-large-text{
     color: white;
@@ -247,14 +252,14 @@ animation-direction: alternate;
     border-radius: 25px;
     height: 35px;
     background: orangered;
-    color: white;
+/*    color: white;*/
     text-align: center;
     padding-top: 7px;
     cursor: pointer;
 }
 .button-get-this-last:hover{
     border: 2px solid orangered;
-    background: transparent;
+    background-color: transparent;
     color: orangered;
 }
 .team-banner{
@@ -446,6 +451,7 @@ animation-direction: alternate;
     height: 55px;
     background: #EFF0F4;
     text-align: center;
+    margin-top: 10px;
 
 
 }
@@ -480,4 +486,31 @@ animation-direction: alternate;
     background: transparent;
     color: black;
     font-weight: bold;
+}
+ #myOverlay2 {
+    width:50%;
+    height:50%;
+}
+.popup-header {
+
+    background: #EFF0F4;
+    text-align: center;
+}
+.input-popup{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.popup-textarea{
+    border: 1px solid gray;
+    background: white;
+}
+
+.submit-popup{
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    margin-top: 30px;
 }
