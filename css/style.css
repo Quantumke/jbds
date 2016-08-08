@@ -183,6 +183,27 @@ animation-direction: alternate;
     margin-left: 10px;
     
 }
+.select-plan-banner-animated{
+    height: 10px;
+    background: #EFF0F4;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 10px;
+    -webkit-animation-name:attention;
+    -webkit-animation-duration:1s;
+    animation-name: attention;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes attention{
+    from {background: red;}
+    to{background: blue;}
+}
+@keyframes attention{
+    from{background: red;}
+    to{background: blue;}
+}
 .offer-desc{
     text-align: left;
 }
@@ -207,4 +228,32 @@ animation-direction: alternate;
     border: 2px solid green;
     background: transparent;
     color: green;
+}
+.button-get-this-two {
+    border-radius: 25px;
+    height: 35px;
+    background: orange;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.button-get-this-two:hover{
+    border: 2px solid orange;
+    background: transparent;
+    color: darkorange;
+}
+.button-get-this-last {
+    border-radius: 25px;
+    height: 35px;
+    background: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.button-get-this-last:hover{
+    border: 2px solid orangered;
+    background: transparent;
+    color: orangered;
 }
