@@ -269,7 +269,7 @@ animation-direction: alternate;
     font-size: 1.6em;
 }
 .team-individual{
-    border: 1px solid #EFF0F4;;
+    border: 1px solid #EFF0F4;
 }
 .hex {
 	width:150px;
@@ -426,4 +426,58 @@ animation-direction: alternate;
 .detailed-role{
     font-weight: bold;
     margin-top: 10px;
+}
+.feedback-area{
+    background:#EFF0F4;
+    width: 100%;
+}
+.feedback-title{
+    text-align: center;
+}
+.feedback-large-title{
+    font-size: 2.5em;
+}
+.feedback-small-title{
+    font-size: 1.3em;
+}
+.text-small{
+    border: 1px solid gray;
+    width: 100%;
+    height: 55px;
+    background: #EFF0F4;
+    text-align: center;
+
+
+}
+.text-small:active{
+    border: 2px solid  #EFF0F4;
+}
+.input-textarea-large{
+    margin-top: 30px;
+}
+.text-large{
+     border: 1px solid   gray;
+    width: 100%;
+    height: 100px;
+    background: #EFF0F4;
+    text-align: center;
+}
+.submit-button-area{
+    margin-top: 30px;
+}
+.submit-feedback-button{
+    border-radius: 25px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+    background: white;
+    color: #000;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+.submit-feedback-button:hover{
+    background: transparent;
+    color: black;
+    font-weight: bold;
 }

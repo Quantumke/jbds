@@ -8692,7 +8692,7 @@ label {
 }
 
 input:not([type]),
-input[type=text],
+/*input[type=text],*/
 input[type=password],
 input[type=email],
 input[type=url],
