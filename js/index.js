@@ -23,3 +23,7 @@ $(function() {
     $('.banner-last-option').css('background-color', '#EFF0F4');
   });
 });
+
+    $(document).ready(function() {
+        $('.honeycombs').honeycombs();
+    });
