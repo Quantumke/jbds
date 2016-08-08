@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/menu_elastic.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
@@ -22,12 +23,12 @@
           <div class="menu-wrap">
 				<nav class="menu">
 					<div class="icon-list">
-						<a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
-						<a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
-						<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
-						<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
-						<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
-						<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+						<a href="#"><i class="fa fa-list"></i><span>Jobs Board</span></a>
+						<a href="#"><i class="fa fa-briefcase"></i><span>Dev Portal</span></a>
+						<a href="#"><i class="fa fa-users"></i><span>Recruiter Portal</span></a>
+						<a href="#"><i class="fa fa-trophy"></i><span>Make order</span></a>
+						<a href="#"><i class="fa fa-phone"></i><span>Contact us</span></a>
+
 					</div>
 				</nav>
 				<button class="close-button" id="close-button">Close Menu</button>
@@ -42,15 +43,16 @@
         <div class="container">
             <div class="row">
             <div class="header-text-large col s12 m12 l12">
+                <span class="website-title col s12 l12 m12">&lt; i254/ &gt;</span>
                 <span class="header-large-text col s12 l12 m12"> Achieve Better Marketing Results with Clean & Beautiful Design</span><br><br>
                 <span class="header-small-text col s12 m12 l12">&lt; i254/ &gt; Your starting point for building successful software products.</span>
                 </div>
                 <br><br>
-                 <div class="button-get-started col s2 m2 l2">
+                 <div class="button-get-started col s2 m2 l2" onclick="dome()">
             Get started
             </div>
                 <div class="spacer col s1 m1 l1"></div>
-                  <div class="button-get-started col s2 m2 l2">
+                  <div class="button-get-started col s2 m2 l2" onclick="dome()">
             Tell Me More
             </div>
                 
@@ -60,7 +62,7 @@
            
 
         </div>
-<div class="three-modules">
+<div  class="three-modules">
         <div class="container">
     <div class="row">
         <p class="what-we-do col s12 m12 l12">What we do</p>
@@ -112,7 +114,7 @@
         <div class="about-us-large">
         <div class="container">
             <div class="row">
-            <div class="about-us-left col s6 m6 l6">
+            <div  class="about-us-left col s6 m6 l6">
                 <p class="about-us-title col s11 m11 l11">
                 Validate your Business Idea and Reach Product Market Fit
                 </p>
@@ -138,7 +140,7 @@
         <div class="container">
             <div class="row">
 
-            <div class="price-one col s4 m4 l4">
+            <div id="pricing-structure" class="price-one col s4 m4 l4">
                 <p class="price-header col s11 m11 l11">
                 <span class="currency-ksh col s2 m2 l2">Ksh</span>
                     <span class="currency-amount col s7 m7 l7">
@@ -233,8 +235,11 @@
                         </span>
 
                     </span>
-                    <span  class="button-starter button-get-this col s6 m6 l6" style="margin-left:25%;">
-                    Get this
+                    <span  class="button-starter button-get-this col s6 m6 l6" style="margin-left:25%;" data-overlay-page-wrap>
+
+                    <a id="item-one" class="overlayTrigger1" href="#myOverlay2" data-overlay-trigger>Get this</a>
+
+
                     </span>
 
                 </p>
@@ -335,8 +340,10 @@
                         </span>
 
                     </span>
-                    <span  class="button-best-option button-get-this-two col s6 m6 l6" style="margin-left:25%;">
-                    Get this
+                    <span  class="button-best-option button-get-this-two col s6 m6 l6" style="margin-left:25%;" data-overlay-page-wrap>
+
+                    <a id="item-two" class="overlayTrigger3" href="#myOverlay2" data-overlay-trigger>Get this</a>
+
                     </span>
                 
                 </p>
@@ -437,9 +444,11 @@
 
 
 
-                    <span  class="button-last-option button-get-this-last col s6 m6 l6" style="margin-left:25%;">
-                    Get this
-                    </span>
+                    <span id="item-three"  class="button-last-option button-get-this-last col s6 m6 l6" style="margin-left:25%;"  data-overlay-page-wrap>
+
+                    <a id="item-three" class="overlayTrigger2" href="#myOverlay2" data-overlay-trigger>Get this</a>
+
+                            </span>
 
                 </p>
 
@@ -525,7 +534,7 @@
             </div>
 
         </div>
-        <div class="feedback-area">
+        <div  id="#feedbacklink" class="feedback-area">
         <div class="container">
             <div class="row">
                 <p class="feedback-title col s12 m12 l12">
@@ -539,14 +548,14 @@
 
                 <div class="formlarge col s12 m12 l12">
                     <form action="" name="">
-            <div class="input-text-small col s4 m4 l4">
-                <input type="text" class="text-small col s11 m11 l11" placeholder="Name" name="name" autocomplete="off" >
+            <div class="input-text-small col s12 m12 l4">
+                <input type="text" class="text-small col s12 m12 l11" placeholder="Name" name="name" id="name" autocomplete="off" >
                 </div>
-                    <div class="input-text-small col s4 m4 l4">
-                <input type="text" class="text-small col s11 m11 l11" placeholder="Email" name="email" autocomplete="off" >
+                    <div class="input-text-small col s12 m12 l4">
+                <input type="text" class="text-small col s12 m12 l11" placeholder="Email" name="email" autocomplete="off" >
                 </div>
-                     <div class="input-text-small col s4 m4 l4">
-                <input type="text" class="text-small col s11 m11 l11" placeholder="Phone" name="phone" autocomplete="off" >
+                     <div class="input-text-small col s12 m12 l4">
+                <input type="text" class="text-small col s12 m11 l11" placeholder="Phone" name="phone" autocomplete="off" >
                 </div>
                     <div class="input-textarea-large col s12 m12 l12">
                     <textarea class="text-large col s12 m12 l12">Message</textarea>
@@ -600,6 +609,66 @@
         </div>
 
         </div>
+        <div style="display:none;">
+
+
+			<div id="myOverlay2" aria-labelledby="myOverlay2Heading" data-overlay-container-class="slide-down" role="region">
+				<div class="popup-header col s12 m12 l12">
+                <span class="col s12 m12 l12">FILL IN THE FORM TO COMPLETE YOUR ORDER</span><br>
+                    <form action="" method="post" enctype="multipart/form-data">
+                    <input type="hidden" id="package" class="col s12 m12 l12" name="package"><br>
+                    <input type="text" name="name" placeholder="Your Name" class="input-popup col s12 m12 l12"><br>
+                    <input type="text" name="" placeholder="Your Email" class="input-popup col s12 m12 l12"><br>
+                    <input type="text" name="" placeholder="Phone number" class="input-popup col s12 m12 l12"><br>
+
+                        <textarea class="popup-textarea">
+                        Tell us a little more about your project
+                        </textarea>
+                        <br>
+                        <input type="submit" name="submit" class="submit-popup">
+                        </form>
+                </div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+        <script>
+var el = document.getElementById('item-three');
+if(el){
+  el.addEventListener('click', addtoform, false);
+}
+function addtoform() {
+    document.getElementById("package").value = "package3"
+}
+
+var packageone = document.getElementById('item-one');
+if(packageone){
+  packageone.addEventListener('click', addpackageone, false);
+}
+function addpackageone() {
+    document.getElementById("package").value = "package1"
+}
+var packagetwo = document.getElementById('item-two');
+if(packagetwo){
+  packagetwo.addEventListener('click', addpackagetwo, false);
+}
+function addpackagetwo() {
+    document.getElementById("package").value = "package2"
+}
+
+function dome(){
+    	window.location="#pricing-structure";
+}
+function goabout(){
+    	window.location="#feedbacklink";
+}
+        </script>
+        <script src="js/Overlay.js"></script>
         <script src="js/classie.js"></script>
 
     <script src="js/main.js"></script>
