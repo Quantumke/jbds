@@ -269,7 +269,7 @@ animation-direction: alternate;
     font-size: 1.6em;
 }
 .team-individual{
-    border: 1px solid black;
+    border: 1px solid #EFF0F4;;
 }
 .hex {
 	width:150px;
@@ -422,4 +422,8 @@ animation-direction: alternate;
 }
 .individual-name{
     font-size: 1.4em;
+}
+.detailed-role{
+    font-weight: bold;
+    margin-top: 10px;
 }
