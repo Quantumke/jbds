@@ -24,6 +24,4 @@ $(function() {
   });
 });
 
-    $(document).ready(function() {
-        $('.honeycombs').honeycombs();
-    });
+
